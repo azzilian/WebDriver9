@@ -24,10 +24,10 @@ public class Main extends BaseClass {
         widget = driver.findElement(widgetlocator);
 
         if (widget.isEnabled()){
-        System.out.println("сертификат на месте " +widget.isEnabled());
+        System.out.println("сертификат на месте статус" +widget.isEnabled());
         }
         else {
-        System.out.println("сертификат не отобразился " +widget.isEnabled());
+        System.out.println("сертификат не отобразился статус" +widget.isEnabled());
         }
         Thread.sleep(5000);
         driver.quit();
