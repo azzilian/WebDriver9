@@ -1,5 +1,6 @@
 import config.BaseClass;
 import org.apache.commons.exec.ExecuteException;
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -40,6 +41,11 @@ public class HomeWork10 extends BaseClass {
             WebElement inputElement = driver.findElement(By.id("submit"));
             inputElement.sendKeys(Keys.ENTER);
 
+  }
+  @AfterClass
+     public static void closePage() throws InterruptedException {
+        Thread.sleep(5000);
+        driver.quit();
   }
 }
 
