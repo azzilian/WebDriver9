@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 
 import java.sql.Statement;
 
-public class TestLink extends BaseClass {
+public class HomeWork10 extends BaseClass {
     static Statement statement;
     @BeforeClass
     public static void initPage() {
