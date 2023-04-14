@@ -17,6 +17,7 @@ public class Main extends BaseClass {
         WebElement widget;
 
         Properties props = System.getProperties();
+
         driver.get("https://ithillel.ua/courses/qa-automation");
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());

@@ -6,12 +6,14 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 
 public class BaseClass {
-    public static  WebDriver driver = initDriverChrome();
-    private static WebDriver initDriverChrome() {
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--start-maximized","--remote-allow-origins=*");
-        return new ChromeDriver(chromeOptions);
-    }
+
+    public static  WebDriver driver=DriverConfig.createDriver(Browsers.CRHOME);
+//    public static  WebDriver driver = initDriverChrome();
+//    private static WebDriver initDriverChrome() {
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.addArguments("--start-maximized","--remote-allow-origins=*");
+//        return new ChromeDriver(chromeOptions);
+//    }
 //        ChromeOptions chromeOptions = new ChromeOptions();
 //        chromeOptions.addArguments("--start-maximized","--remote-allow-origins=*");
 //        WebDriver driver =new ChromeDriver(chromeOptions);

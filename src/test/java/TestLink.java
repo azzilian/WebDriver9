@@ -10,7 +10,7 @@ public class TestLink extends BaseClass {
     static Statement statement;
     @BeforeClass
     public static void b() {
-        driver.get("https://ithillel.ua/courses/qa-automation");
+        driver.get("https://demoqa.com/text-box");
     }
     @Test
     public void  test1() throws ExecuteException{
