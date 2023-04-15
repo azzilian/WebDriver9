@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import java.sql.Statement;
 
 public class HomeWork10 extends BaseClass {
-    static Statement statement;
+
     @BeforeClass
     public static void initPage() {
         driver.get("https://demoqa.com/text-box");
